@@ -9,14 +9,14 @@ package exceptions;
  *
  * @author Alain Lozano,Ilia Consuegra
  */
-public class FiledTooLongException extends Exception {
+public class FieldTooLongException extends Exception {
 
     /**
      * Constructs an instance of <code>FiledTooLongException</code> with the
      * specified detail message.
      *
      */
-    public FiledTooLongException() {
+    public FieldTooLongException() {
         super("The field is too long (255 character max).");
     }
 }
