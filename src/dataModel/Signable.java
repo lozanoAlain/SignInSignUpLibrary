@@ -5,6 +5,7 @@
  */
 package dataModel;
 
+import exceptions.ConnectionErrorException;
 import exceptions.ExistUserException;
 import exceptions.IncorrectPasswordException;
 import exceptions.UserNotExistException;
@@ -20,14 +21,16 @@ public interface Signable {
      * @param user
      * @throws UserNotExistException
      * @throws IncorrectPasswordException
+     * @throws ConnectionErrorException
      */
-    public void signIn(User user) throws UserNotExistException, IncorrectPasswordException;
+    public void signIn(User user) throws UserNotExistException, IncorrectPasswordException,ConnectionErrorException;
 
     /**
      *
      * @param user
      * @throws ExistUserException 
+     * @throws ConnectionErrorException 
      */
-    public void signUp(User user) throws ExistUserException;
+    public void signUp(User user) throws ExistUserException,ConnectionErrorException;
 
 }
