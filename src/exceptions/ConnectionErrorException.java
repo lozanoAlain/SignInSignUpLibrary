@@ -7,7 +7,7 @@ package exceptions;
 
 /**
  *
- * @author Usuario
+ * @author Alain Lozano, Ilia Consuegra
  */
 public class ConnectionErrorException extends Exception {
 

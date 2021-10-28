@@ -17,7 +17,7 @@ public class FullNameException extends Exception {
      *
      * @param msg the detail message.
      */
-    public FullNameException(String msg) {
+    public FullNameException() {
         super("The full name is incomplete.");
     }
 }
