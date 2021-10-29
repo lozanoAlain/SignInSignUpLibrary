@@ -23,7 +23,7 @@ public interface Signable {
      * @throws IncorrectPasswordException
      * @throws ConnectionErrorException
      */
-    public void signIn(User user) throws UserNotExistException, IncorrectPasswordException,ConnectionErrorException;
+    public User signIn(User user) throws UserNotExistException, IncorrectPasswordException,ConnectionErrorException,Exception;
 
     /**
      *
@@ -31,6 +31,6 @@ public interface Signable {
      * @throws ExistUserException 
      * @throws ConnectionErrorException 
      */
-    public void signUp(User user) throws ExistUserException,ConnectionErrorException;
+    public void signUp(User user) throws ExistUserException,ConnectionErrorException,Exception;
 
 }
