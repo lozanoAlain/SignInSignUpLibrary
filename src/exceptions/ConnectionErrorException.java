@@ -17,7 +17,7 @@ public class ConnectionErrorException extends Exception {
      *
      * @param msg the detail message.
      */
-    public ConnectionErrorException(String msg) {
+    public ConnectionErrorException() {
         super("It was implossible to connect to the server.");
     }
 }
