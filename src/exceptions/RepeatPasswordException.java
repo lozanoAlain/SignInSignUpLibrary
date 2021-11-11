@@ -17,6 +17,6 @@ public class RepeatPasswordException extends Exception {
      *
      */
     public RepeatPasswordException() {
-        super("The passwords don´t macht.");
+        super("The passwords don´t match.");
     }
 }
